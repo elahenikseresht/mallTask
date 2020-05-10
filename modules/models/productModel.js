@@ -79,7 +79,7 @@ productSchema.pre("save", function(next) {
   next();
 });
 productSchema.plugin(timestamps);
-//setting createdAt and updatedAt atuomaticly
+//xgthgf
 const Product = mongoose.model("Product", productSchema);
 
 module.exports = Product;
