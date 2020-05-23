@@ -104,4 +104,61 @@ module.exports = class Controller {
       });
     }
   }
+
+  // async test(req, res) {
+  //   try {
+  //     const doc = await this.Model.find({ summary: { $ne: "رنگی" } });
+  //     return res.status(200).json({
+  //       status: "success",
+  //       length: doc.length,
+  //       data: doc,
+  //     });
+  //   } catch (error) {
+  //     return res.status(400).json({
+  //       data: error.toString(),
+  //       success: false,
+  //     });
+  //   }
+  // }
+
+  // async test(req, res) {
+  //   try {
+  //     const doc = await this.Model.update(
+  //       { _id: "5eadb269d27ab32208345030" },
+  //       {
+  //         $set: {
+  //           description: "updated description2",
+  //         },
+  //       }
+  //     );
+  //     return res.status(200).json({
+  //       status: "success",
+  //       length: doc.length,
+  //       data: doc,
+  //     });
+  //   } catch (error) {
+  //     return res.status(400).json({
+  //       data: error.toString(),
+  //       success: false,
+  //     });
+  //   }
+  // }
+
+  // async test(req, res) {
+  //   try {
+  //     const doc = await this.Model.find({
+  //       title: { $regex: /خوب/ },
+  //     });
+  //     return res.status(200).json({
+  //       status: "success",
+  //       length: doc.length,
+  //       data: doc,
+  //     });
+  //   } catch (error) {
+  //     return res.status(400).json({
+  //       data: error.toString(),
+  //       success: false,
+  //     });
+  //   }
+  // }
 };

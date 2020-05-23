@@ -79,7 +79,6 @@ productSchema.pre("save", function(next) {
   next();
 });
 productSchema.plugin(timestamps);
-//xgthgf
 const Product = mongoose.model("Product", productSchema);
 
 module.exports = Product;

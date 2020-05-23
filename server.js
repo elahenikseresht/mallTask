@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const expressValidator = require("express-validator");
-global.config = require("./modules/config");
+// global.config = require("./modules/config");
 const productRout = require("./modules/routes/productRout");
 const errorHandler = require("./utils/errorHandler");
 
@@ -37,6 +37,6 @@ app.use(bodyParser.json({ type: "application/json" }));
 app.use(errorHandler.err.bind(errorHandler));
 app.use(errorHandler.notFoundError.bind(errorHandler));
 
-const server = app.listen(config.port, () => {
-  console.log(`Server running at Port ${config.port}`);
+const server = app.listen(2000, () => {
+  console.log(`Server running at Port 2000`);
 });

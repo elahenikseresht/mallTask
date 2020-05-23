@@ -17,5 +17,5 @@ router.post(
   "/getProductsByTag",
   ProductController.getProductsByTag.bind(ProductController)
 );
-
+//router.get("/test", ProductController.test.bind(ProductController));
 module.exports = router;
